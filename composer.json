@@ -1,0 +1,32 @@
+{
+  "name": "sumantablog/lockscreen",
+  "description": "Lock-screen page for laravel-superadmin",
+  "type": "library",
+  "keywords": ["laravel-admin", "extension", "lock screen"],
+  "homepage": "https://github.com/sumantablog/lockscreen",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Admin\\LockScreen\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Admin\\LockScreen\\LockScreenServiceProvider"
+      ]
+
+    }
+  }
+}
